@@ -4,23 +4,8 @@
 
 ---
 
-## 📌 Table of Contents
-- [Live Demo](#live-demo)
-- [Architecture](#architecture)
-- [Tech Stack](#tech-stack)
-- [How It Works](#how-it-works)
-- [Problems I Faced](#problems-i-faced)
-- [Project Structure](#project-structure)
-- [Local Setup](#local-setup)
-- [Deploy on Render](#deploy-on-render)
+## demo - <img width="1299" height="994" alt="Screenshot 2026-03-18 203220" src="https://github.com/user-attachments/assets/90aaae0d-5c50-40c8-88fb-ecaf5aa7362c" />
 
----
-
-## 🚀 Live Demo
-
-Deploy on [Render](https://render.com) using the included `render.yaml` blueprint.
-
----
 
 ## 🏗️ Architecture
 
@@ -70,7 +55,7 @@ Text Chunks
       ▼  HuggingFace all-MiniLM-L6-v2 (384-dim embeddings)
 Embeddings
       │
-      ▼  Pinecone Serverless (AWS us-east-1)
+      ▼  Pinecone Serverless 
 Vector Index → "medical-chatbot"
 ```
 
@@ -86,7 +71,6 @@ Vector Index → "medical-chatbot"
 | **RAG Framework** | [LangChain](https://langchain.com) — retrieval chain + history-aware retriever |
 | **Conversation Memory** | `create_history_aware_retriever` + `MessagesPlaceholder` |
 | **UI** | [Streamlit](https://streamlit.io) — native `st.chat_message`, `st.container(height=)` |
-| **Deployment** | [Render](https://render.com) — `render.yaml` blueprint |
 
 ---
 
