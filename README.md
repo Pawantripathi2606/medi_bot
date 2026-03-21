@@ -197,7 +197,7 @@ Open `http://localhost:8501` 🎉
    - `PINECONE_API_KEY`
    - `GROQ_API_KEY`
 5. Click **Deploy** ✅
-
+.
 > **Note:** Run `store_index.py` locally first to populate your Pinecone index. The deployed app only queries the existing index.
 
 ---
